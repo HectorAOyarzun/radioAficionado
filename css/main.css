@@ -1,0 +1,41 @@
+nav {
+    display: flex;          // Alinea los elementos horizontalmente
+    align-items: center;   // Alinea verticalmente al centro
+    padding: 1rem;         // Espacio interno
+    background-color: $color-primario; 
+
+    img {
+        max-width: 150px;   // Ajusta el ancho máximo de la imagen
+        margin-right: 1rem;  // Espacio a la derecha de la imagen
+    }
+
+    .texto-sobre-imagen {
+        position: absolute;       // Posicionamiento absoluto sobre la imagen
+        top: 50%;                 // Centra verticalmente
+        left: 50%;                // Centra horizontalmente
+        transform: translate(-50%, -50%); // Ajusta para centrar correctamente
+        color: white;            // Color del texto
+        text-align: center;      // Alinea el texto al centro
+
+        h2 {
+            font-size: 2rem;     // Tamaño del título
+            margin-bottom: 0.5rem; // Espacio inferior al título
+        }
+    }
+
+    ul {
+        list-style: none;   // Quita los puntos de la lista
+        margin-left: auto;  // Empuja el menú a la derecha
+
+        li {
+            display: inline; // Alinea los elementos del menú en línea
+
+            a {
+                display: block;  // Hace que los enlaces ocupen todo el espacio del elemento de lista
+                padding: 0.5rem 1rem; // Espacio interno de los enlaces
+                color: white;   // Color de los enlaces
+                text-decoration: none; // Quita el subrayado de los enlaces
+            }
+        }
+    }
+}
